@@ -45,7 +45,7 @@ const int      LDR_MAX_RAW     = 1023;
 
 // Matrix powered from 3.3V: keep brightness low (0..15 allowed by MAX7219)
 const uint8_t  BRIGHTNESS_MIN  = 0;
-const uint8_t  BRIGHTNESS_MAX  = 10;      // safe for 3V3; raise carefully if stable
+const uint8_t  BRIGHTNESS_MAX  = 12;      // safe for 3V3; raise carefully if stable
 const float    LPF_ALPHA       = 0.08f;  // ADC smoothing (0..1), lower = smoother
 const uint8_t  BRIGHTNESS_HYST = 1;      // min steps change to apply new brightness
 const uint16_t LDR_SAMPLE_MS   = 80;     // ADC sampling interval (ms)
