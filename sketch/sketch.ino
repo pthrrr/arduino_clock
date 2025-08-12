@@ -22,6 +22,7 @@
 #include <SPI.h>
 #include <math.h>
 #include "secrets.h"  // Define WIFI_SSID, WIFI_PASS, OTA_HOSTNAME, OTA_PASSWORD
+#include "p_font.h"
 
 // ---------- Display configuration ----------
 #define HARDWARE_TYPE MD_MAX72XX::FC16_HW  // Try ICSTATION_HW if text looks wrong
@@ -179,6 +180,8 @@ void setup()
 
   ensureOTAStarted();  // start OTA if WiFi is up
   matrix.displayClear();
+  matrix.setFont(p_Font);
+  //matrix.setCharSpacing(2);
 }
 
 void loop()
