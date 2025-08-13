@@ -2,6 +2,9 @@
 
 A small Wi‑Fi clock for a 4‑module MAX7219 LED matrix (8×32) driven by a WeMos D1 mini (ESP8266).
 
+![front view](/pics/front.png)
+![back view](/pics/back.png)
+
 Features
 - NTP time sync with Berlin timezone (CET/CEST automatic DST)
 - Auto‑brightness via light sensor on A0 (smoothed)
